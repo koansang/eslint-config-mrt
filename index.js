@@ -1,5 +1,10 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
+  env: {
+    es6: true,
+    browser: true,
+    jest: true,
+  },
   extends: [
     'airbnb-typescript',
     'plugin:react/recommended',
