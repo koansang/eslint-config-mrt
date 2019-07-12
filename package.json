@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-mrt",
+  "version": "1.0.0",
+  "description": "eslint config for myrealtrip frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koansang/eslint-config-mrt.git"
+  },
+  "keywords": [
+    "eslintconfig",
+    "eslint",
+    "es-lint"
+  ],
+  "author": "myrealtrip",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koansang/eslint-config-mrt/issues"
+  },
+  "homepage": "https://www.myrealtrip.com",
+  "peerDependencies": {
+    "eslint": ">= 3"
+  }
+}
