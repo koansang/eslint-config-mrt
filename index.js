@@ -6,11 +6,13 @@ module.exports = {
     jest: true,
   },
   extends: [
-    'airbnb-typescript',
+    'airbnb',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    'plugin:react-hooks',
+  ],
+  plugins: [
+    'react-hooks',
   ],
   parserOptions: {
     ecmaVersion: 2018,
@@ -26,10 +28,17 @@ module.exports = {
     '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: '[createElement]'}]
   },
   settings: {
     react: {
         version: 'detect',
     },
+    'import/resolver': {
+      'node': {
+        'extensions': ['.js', '.jsx', '.ts', '.tsx'],
+      }
+    }
   },
 };
